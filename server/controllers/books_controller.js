@@ -30,7 +30,7 @@ module.exports = {
     },
     delete: (req, res) => {
         let index = null;
-        book.forEach((book, i) => {
+        books.forEach((book, i) => {
             if(book.id === Number(req.params.id)) index= i;
         });
         books.splice(index, 1);
